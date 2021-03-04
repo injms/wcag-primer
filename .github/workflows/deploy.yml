@@ -16,8 +16,9 @@ jobs:
     - uses: ruby/setup-ruby@v1
       with:
         bundler-cache: true
-        github_token: ${{ secrets.GITHUB_TOKEN }}
     - run: |
         git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
         git config --global user.name github-actions
+        git remote rm origin
+        git remote add origin 'git@github.com:injms/wcag-primer.git'
         bundle exec rake publish
