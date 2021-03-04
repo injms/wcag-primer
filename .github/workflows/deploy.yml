@@ -14,10 +14,9 @@ jobs:
       with:
         fetch-depth: 0
     - uses: ruby/setup-ruby@v1
-      # with:
-        # bundler-cache: true
+      with:
+        bundler-cache: true
     - run: |
         bundle install
         git status
-        git status --porcelain
         bundle exec rake publish
