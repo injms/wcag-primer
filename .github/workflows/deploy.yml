@@ -18,6 +18,6 @@ jobs:
         bundler-cache: true
         github_token: ${{ secrets.GITHUB_TOKEN }}
     - run: |
-        git config --global user.email "injms@users.noreply.github.com"
-        git config --global user.name injms
+        git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+        git config --global user.name github-actions
         bundle exec rake publish
