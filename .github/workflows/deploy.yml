@@ -17,6 +17,6 @@ jobs:
       with:
         bundler-cache: true
     - run: |
-        git config --global user.email "github-actions@github.com"
-        git config --global user.name "github-actions"
+        git config --global user.email "1732331+injms@users.noreply.github.com"
+        git config --global user.name "injms"
         bundle exec rake publish
